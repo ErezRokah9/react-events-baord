@@ -19,7 +19,7 @@ class Events extends React.Component<Props> {
 		return (
 			<Container>
 				<h1> Dashboard </h1>
-				<EventsDashboard event={this.convertArray} />
+				<EventsDashboard event={convertArray} />
 			</Container>
 		);
 	}

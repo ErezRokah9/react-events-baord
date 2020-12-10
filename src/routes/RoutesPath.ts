@@ -1,5 +1,6 @@
 enum RoutesPath {
 	ROOT = '/',
+	EVENTS_DASHBOARD = '/events-dashboard',
 	CHECKOUT = '/checkout',
 	FORM_EXAMPLE = '/form-example',
 	CHECKOUT_SAMSUNG = '/checkout-samsung',

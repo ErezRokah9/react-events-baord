@@ -5,7 +5,6 @@ import { CatalogState } from './catalog/interfaces';
 import { CartState } from './cart/interfaces';
 
 export interface ApplicationState extends BaseApplicationState {
-	[x: string]: any;
 	cart: CartState;
 	catalog: CatalogState;
 }

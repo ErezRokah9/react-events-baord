@@ -8,7 +8,7 @@
       "@base/*": ["base/*"]
     },
     "target": "es5",
-    "lib": ["es5", "es6", "es7", "es2017", "dom", "esnext.asynciterable", "ScriptHost"],
+    "lib": ["es5", "es6", "es7", "es2017", "dom", "esnext.asynciterable"],
     "jsx": "react",
     "sourceMap": true,
     "allowJs": false,

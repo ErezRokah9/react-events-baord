@@ -15,12 +15,3 @@ export interface ActionCreator {
 export interface EventsAction extends Action<TypesNames.SET_EXAMPLE> {
 	exampleData: string;
 }
-
-export interface Event {
-	id: string;
-	title: string;
-	date: string;
-	fromTime: string;
-	toTime: string;
-	eventType: string;
-}

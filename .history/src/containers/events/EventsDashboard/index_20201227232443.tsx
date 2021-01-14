@@ -11,8 +11,8 @@ interface Props {
 
 interface State {
 	eventTypeToDisplay: string;
-	types: string[];
-	defualTypes: string[];
+	types: string[]
+	;
 }
 
 class EventsDashboard extends React.Component<Props, State> {
@@ -21,28 +21,14 @@ class EventsDashboard extends React.Component<Props, State> {
 
 		this.state = {
 			eventTypeToDisplay: 'Dummy value',
-			types: ['birthday', 'wedding', 'meeting'],
-			defualTypes: ['birthday', 'wedding', 'meeting']
+			types: ['birthday', 'wedding', 'meeting']
 		};
 
 		this.handleDisplayEvent = this.handleDisplayEvent.bind(this);
 	}
 
 	handleDisplayEvent(eventTypeToDisplay: string) {
-		const { defualTypes } = this.state;
-		if (defualTypes.includes(eventTypeToDisplay)) {
-			const newState = {
-				types: [eventTypeToDisplay],
-				eventTypeToDisplay
-			};
-			this.setState(newState);
-		} else {
-			const newState = {
-				types: defualTypes,
-				eventTypeToDisplay
-			};
-			this.setState(newState);
-		}
+		this.setState({ eventTypeToDisplay });
 	}
 
 	render() {

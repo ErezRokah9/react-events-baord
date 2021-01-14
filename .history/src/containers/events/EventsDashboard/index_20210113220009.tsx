@@ -29,8 +29,7 @@ class EventsDashboard extends React.Component<Props, State> {
 	}
 
 	handleDisplayEvent(eventTypeToDisplay: string) {
-		const { defualTypes } = this.state;
-		if (defualTypes.includes(eventTypeToDisplay)) {
+		if (this.state.defualTypes.includes(eventTypeToDisplay)) {
 			const newState = {
 				types: [eventTypeToDisplay],
 				eventTypeToDisplay
@@ -38,7 +37,7 @@ class EventsDashboard extends React.Component<Props, State> {
 			this.setState(newState);
 		} else {
 			const newState = {
-				types: defualTypes,
+				types: this.state.defualTypes,
 				eventTypeToDisplay
 			};
 			this.setState(newState);
